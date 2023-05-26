@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LOGIN/SIGNUP</title>
+</head>
+<style type="text/css">
+	.body{
+		
+		margin: 0%;
+		background-image: url(LSPU.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.container{
+		background-color: white;
+		border-radius: 15px;
+		margin-top: 7%;
+		width: 25%;
+		padding: 2%;
+	}
+	.logo{
+		text-align: center;
+		width: 35%;
+		height: 35%;
+	}
+	.input{
+		margin-top: 2%;
+		width: 50%;
+		font-size: 100%;
+		border-radius: 5px;
+		border-style: hidden;
+		background-color: #EBECF1;
+	}
+	.done-container {
+    margin-bottom: 2%;
+    
+  }
+  #doneBtn {
+    background-color: #FFA700;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    width: 20%;
+    border-radius: 70px;
+    cursor: pointer;
+    margin-top: 2%;
+  }
+  
+  #doneBtn:hover {
+    background-color: #E86A33;
+    color: white;
+  }
+  .link{
+  text-decoration: none;
+  color: black;
+}
+.link:hover{
+  color: #FFA700;
+}
+</style>
+<body class="body">
+	<center><
+	<div class="container">
+		<img src="logo.png" class="logo">
+		<div>
+			<input class="input" type="text" class="username" placeholder="Username" id="username">
+         </div>    
+         <div >
+         	<input class="input" style="margin-top: 2%; margin-bottom: 2%;" type="password" class="password" placeholder="Password" id="password">
+         </div>   
+    <div class="done-container">
+        <button type="button" onclick="alert('Log In')" id="doneBtn"><a class="link" href="deanacc.html">Log In</a></button>
+</div>
+<button type="button" onclick="alert('Sign Up')" style="border-style: none; background-color: white; "><a href="profile.html">Sign Up</a></button>
+	</div>
+
+</center>
+
+
+</body>
+</html>

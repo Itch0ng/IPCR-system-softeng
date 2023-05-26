@@ -1,0 +1,136 @@
+.download-container {
+  float: right;
+    margin-bottom: 3%;
+    margin-right: 3%;
+  }
+  
+  #downloadBtn {
+    background-color: #FFA700;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    margin-top: 2%;
+  }
+  
+  #downloadBtn:hover {
+    background-color: #E86A33;
+    color: white;
+  }
+
+   
+.header{
+   text-align: center;
+   background-color: #E86A33;
+   
+}
+    
+
+.maintable{
+    border-collapse:collapse ;
+    margin-top: 2px;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    flex: 1;
+    
+   
+
+}
+.maintable  tr td{
+    border: 1px solid rgb(37, 36, 36);
+    padding: 5px;
+    font-size: 90%;
+  
+   
+}
+.rowHead{
+    background-color:rgb(241, 144, 69);
+    color: rgb(52, 61, 61);
+
+    
+}
+/* modify the rows under the RATING */ 
+.remarks{
+    width: 100%;
+    height: 30%;
+}
+
+.ratingA{
+    width: 10%;
+    
+}
+
+.ratingT{
+    width: 10%;
+}
+
+/* .ratingQTY{
+    width: 10%;
+} */
+
+.under-rating{
+    text-align: center;
+    
+ }
+
+
+.add{
+    margin-left: 5px;
+}
+
+
+#tableHead tr td{ 
+    text-align: center;
+}
+
+
+
+#header{
+    text-align: center;
+    height: 50px;
+   
+}
+
+ #rating tr td{
+ border-collapse:collapse ;
+ position:relative;
+ border-left: 0px;
+ padding-right: 100px;
+ margin-left:2px;
+
+}
+
+#count{
+    width: 35px;
+    
+}
+
+
+#end-table{
+    border-collapse: collapse;
+}
+
+#end-table tr td{
+    
+    border: 1px solid black;
+}
+
+#scale{
+    
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+h3{
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: right;
+}
+
+.num-adjectiveRating{
+    font-size: 14px;
+}
+
+

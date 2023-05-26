@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICPR FORM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="formipcr.css">
+</head>
+<style type="text/css">
+    *{
+    box-sizing: border-box;
+    margin: 0%;
+  }
+    /*header*/
+  .container{
+      background: #FFA700;
+      padding: 2%;
+  }
+  .logo{
+    float: left;
+    width:90px;
+    height: 90px;
+   margin-top: -1.5%;
+   margin-left: -1%;
+   margin-right: 1%;
+  }
+   .logout{
+      float: right;
+      background-color: #E86A33;
+      font-family: 'Josefin Sans', sans-serif;
+      width: 10%;
+      color: #F2EDD7;
+      border-style: none;
+      padding: 1%;
+      border-radius: 50px;
+  }
+  .logout-link{
+    background: #E86A33;
+    text-decoration-line: none;
+    font-size: 90%;
+    font-weight: bold;
+    color: white;
+  }
+  .nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #FFA700;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 9999;
+    align-items: center;
+    top: 0;
+  }
+  .li{
+    float: left; 
+    margin: 0 8%;
+  }
+  .li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 89px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .li a:hover{
+    color: white;
+    background-color: #E86A33;
+  }
+  .table{
+    margin: 2.5%;
+  }
+</style>
+<body>
+<div class="container">
+  <img src="logo.png" class="logo">
+  <label style="color: white; font-family: 'Montserrat', sans-serif; font-size: 250%;">IPCR for LSPU San Pablo Campus</label>
+  <span ><button type="submit" class="logout">
+  <a href="logout.php" class="logout-link">LOG-OUT</a></button></span>
+</div>
+
+  <div class="nav">
+  <li class="li"><a href="profile.html">HOME</a></li>
+  <li class="li"><a href="form.html">IPCR FORM</a></li>
+  <li class="li"><a href="#">EDIT PROFILE</a></li>
+</ul></div>
+
+<div class="table">
+<table class="maintable">
+
+    <td class="header" colspan="10">INDIVIDUAL PERFORMANCE COMMITMENT and REVIEW (IPCR) </td>
+    </tr>
+    <tr class="header" >
+        <td colspan="10"> I, <b><u>user name</u></b> ,- Academic Rank of the Laguna State Polytechnic University, commit to deliver and agree to be rated on the attainment of the following in accordance with the indicated measures for the _____ Semester of Academic Year ______________.</td> 
+    </tr>
+
+        <tr>
+            <td ><span>Conforme:</span><br></td>
+            <td colspan="3"><span>Reviewed by:</span></td>
+            <td colspan="5"><span>Approved by:</span></td>
+        </tr>
+
+        <tr>
+            <td >Ratee:</td>
+            <td colspan="3">Dean:</td>
+            <td colspan="5">Campus Director:</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">Performance Indicator:</td>
+            <td rowspan="2">Target:</td>
+            <td rowspan="2">Accomplished:</td>
+            <td rowspan="2">Deadline:</td>
+            <td colspan="4">Rating:</td>
+            <td colspan="6">Remarks:</td>
+        </tr>
+        
+        <div id ="under-rating">
+        <tr>
+            <td class="under-rating">QTY</td>
+            <td class="under-rating">QL/E</td>
+            <td class="under-rating">T</td>
+            <td class="under-rating">A</td>
+            <td colspan="2"></td>
+        </tr>
+    </div>
+<tr>
+            <td colspan="10" style="background-color: #263A29; color: white;">Instruction</td>
+            
+        </tr>
+        <tr>
+            <td colspan="10" class="rowHead">1. Plan and prepare instructional materials to enhance insctruction.</td>
+        </tr>
+
+        <tr>
+            <td>A. No. of syllabus</td>
+             <td><input type="number" id="count" value="" min="0"></button></td>         
+            <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td class="ratingQTY"></td>
+            <td class="ratingQL/E"></td>
+            <td class="ratingT"></td>
+            <td class="ratingA"></td>
+            <td colspan="2"  class="remarks"></td>
+        </tr>
+
+        <tr>
+            <td>B.  No. of Course Guide</td>
+            <td><input type="number" id="count" value="" min="0"></button></td>       
+            <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"  class="remarks"></td>
+        </tr>
+
+        <tr>
+            <td>C.No. of SLM</td>
+            <td><input type="number" id="count" value="" min="0"></button></td>       
+             <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"  class="remarks"></td>
+            
+        </tr>
+
+        <tr>
+            <td>D. Number of subject areas with community immersion/involvement component</td>
+            <td><input type="number" id="count" value="" min="0"></button></td>    
+            <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2"  class="remarks"></td>
+           
+        </tr>
+
+        <tr>
+            <td colspan="10"  class="rowHead">2. Organizes classroom instruction.</td>
+        </tr>
+
+        <tr>
+            <td>A. Attendance Sheet </td>
+            <td><input type="number" id="count" value="" min="0"></button></td>       
+            <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>B. Class records
+            </td>
+            <td><input type="number" id="count" value="" min="0"></button></td>    
+            <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">3. Teaching effectiveness.
+            </td>
+        </tr>
+
+        <tr>
+            <td>A. Evaluation of Teaching Effectivess (CQA-SF-012)
+            </td>
+            <td><input type="number" id="count" value="" min="0"></button></td>    
+            <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>B. Classroom Observation (CQA-SF-012) 
+
+            </td>
+            <td><input type="number" id="count" value="" min="0"></button></td>    
+            <td><input type="file" name="" id=""></td>
+            <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">4. Prepare and check Summative/Evaluative/ Formative Tests. 
+            </td>
+         
+        </tr>
+
+        <tr>
+            <td>A. 1  TOS/ Rubrics (Midterm) 
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>A. 2  TOS/ Rubrics (Final Term)
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>B. 1  Test Questions (term exams  / Performance's based activities (Midterm) 
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>B. 2  Test Questions (term exams  / Performance's) based activities (Final Term)
+            </td>
+             <td><input type="number" id="count" value="" min="0"></button></td>    
+             <td><input type="file" name="" id=""></td>
+             <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>C. 1  Answer Keys (Midterm) 
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>C. 2  Answer Keys (Final Term)
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">5. Compute & Evaluate Grades. 
+           
+        </tr>
+
+        <tr>
+            <td>No. of grading sheets submitted & encoded
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">6. Consultation services to faculty and students. 
+            </td>
+        </tr>
+
+        <tr>
+            <td>A. No. of faculty & students seek advises (LSPU-ACAD-SF-011  
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td> <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+           
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10"  class="rowHead">7. Prepare accomplishment report.
+            </td>
+        </tr>
+
+        <tr>
+            <td>A. Accomplishment Report
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" style="background-color: #263A29; color: white;">RESEARCH
+            </td>
+           
+        </tr>
+
+        <tr>
+            <td colspan="10"  class="rowHead">8. Research program/projects/studies. 
+            
+        </tr>
+
+        <tr>
+            <td>A. Research Proposal submitted/ Activity Conducted
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>B. Research Implemented and/or Completed within 
+                the Timeframe
+                
+            </td>
+             <td><input type="number" id="count" value="" min="0"></button></td>    
+             <td><input type="file" name="" id=""></td>
+             <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>C. Research Presented in 
+                Regional/National/International Conferences
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>D. Research Published in Peer-reviewed Journals
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>E. Filed/Published/Approved Intellectual Property 
+                Rights
+                 
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>F. Research Utilized/Deployed through 
+                Commercialization/Extension/Policy
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>G. Number of citations in journals/books
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id="" ></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" style="background-color: #263A29; color: white;">EXTENSION
+
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">9. Extension projects. 
+
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>A. Extension proposal submitted/activity conducted
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td> <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>B. Persons trained/provided with technical advise
+
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>C. Persons who avail the service who rated the 
+                service as good or better
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>D. Persons given training or advisory who rated the 
+                timeliness of service delivery as good or better
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td>E. Technical advice responded within 3 days upon 
+                request
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" style="background-color: #263A29; color: white;">SUPPORT FUNCTION
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">10. Perform Officially-Deligated Assignment
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>A. Accomplishment Report</td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">11. Participate in the Flag Raising Ceremony
+            </td>
+
+        </tr>
+
+
+        <tr>
+            <td>A. Attendance</td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10" class="rowHead">12. Participate in the Flag lowering
+                
+            </td>
+
+        </tr>
+
+
+        <tr>
+            <td>A. Technical advice responded within 3 days upon 
+                request
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="10" class="rowHead">13. Participate in the health and wellness program
+
+                
+            </td>
+           
+        </tr>
+
+
+        <tr>
+            <td>A. Technical advice responded within 3 days upon 
+                request
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="10" class="rowHead">14. Participate in school celebrations and other allied activities
+
+                
+            
+        </tr>
+
+
+        <tr>
+            <td>A. Technical advice responded within 3 days upon 
+                request
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="10"  class="rowHead">15. Attend trainings /conferences/seminar
+                
+            </td>
+            
+        </tr>
+
+
+        <tr>
+            <td>A. Technical advice responded within 3 days upon 
+                request
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>      
+            
+        </tr>
+
+
+        <tr>
+            <td colspan="10" class="rowHead">16. Attend Faculty Meeting
+
+                
+            </td>
+        </tr>
+
+        <tr>
+            <td>A. Attendance
+
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10"  class="rowHead">17. Involvement in accreditation/ISO and other related activities
+
+                
+            </td>
+            
+        </tr>
+
+        <tr>
+            <td>A. Attendance
+
+                
+            </td>
+              <td><input type="number" id="count" value="" min="0"></button></td>    
+              <td><input type="file" name="" id=""></td>
+              <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <tr>
+            <td colspan="10"  class="rowHead">18. Participate in the spiritual activities
+            </td>
+            
+        </tr>
+        <tr>
+            <td>A. Attendance sheet/Program of activities/other 
+                document as proof
+                
+                
+            </td>
+             <td><input type="number" id="count" value="" min="0"></button></td>    
+             <td><input type="file" name="" id=""></td>
+             <td><input type="date" name="date" id=""></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td colspan="2" class="remarks"> </td>
+        </tr>
+
+        <footer id="end-table">
+            
+                <tr>
+                <td colspan="7" rowspan="2">Comments and Recommendation for Development Purposes 
+                    <h3 id="scale">Rating Scale:</h3> 
+                    <p id="scale"> 5 - Outstanding <br>
+                                4 - Very Satisfactory <br>
+                                3 - Satisfactory <br>
+                                2- Unsatisfactory <br>
+                                1 - Poor</p></td>
+                        <td width 25px><p style="font-size: 14px;">Numerical Rating: </p></td>
+                        <td colspan="2"><p style="font-size: 14px;">Adjectival Rating: </p></td>
+                        
+                </tr>
+                <tr>
+                    <td colspan="" style="height: 50px;"></td>
+                    <td colspan="2"></td>
+                </tr>
+
+                <tr>
+                    
+                    <td> <p>Discussed with:</p></td>
+                   <td colspan="3"> <p>Assessed by:</p> </td>
+                   <td colspan="5"> <p>Checked by:</p> </td>
+                   <td colspan="2"> <p>Final Rating:</p> </td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Ratee:</td>
+                    <td colspan="3">Dean / Associate Dean:</td> 
+                    <td colspan="5">HRMO:</td>
+                    <td colspan="2">Campus Director:</td>
+
+                </tr>
+
+                <tr>
+                    <td>Date:</td>
+                    <td colspan="3">Date:</td>
+                    <td colspan="5">Date:</td>
+                    <td colspan="">Date:</td>
+                </tr>
+           
+        </footer>
+
+        
+    </table>
+</table>
+</div>
+
+<div class="download-container">
+        <button type="button" onclick="alert('DOWNLOADED')" id="downloadBtn">DOWNLOAD</button>
+        <button type="button" onclick="alert('DONE')" id="downloadBtn">DONE</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

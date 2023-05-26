@@ -1,0 +1,14 @@
+Index.html 
+Profile.html = DONE BUTTON
+Home.html = DONE BUTTON
+Account.html
+IPCR FORM.html
+
+Index2.html
+deanacc.html
+deanlist.html
+
+index3.html
+superadminhome.html
+superadminin.html
+superadminde.html
